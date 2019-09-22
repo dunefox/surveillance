@@ -1,8 +1,8 @@
 import telegram as tg
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import config as cfg
-import funcs as fnc 
-import logging  
+import funcs as fnc
+import logging
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                      level=logging.INFO)
@@ -19,9 +19,8 @@ dispatcher.add_handler(echo_handler)
 dispatcher.add_handler(caps_handler)
 
 bot = tg.Bot(cfg.token)
-
+# bot.send_message(chat_id=cfg.user_ids["group"], text=input(">> "))
 print(bot.get_me())
-
 
 updater.start_polling()
 updater.idle()
