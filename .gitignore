@@ -3,6 +3,7 @@
 # Edit at https://www.gitignore.io/?templates=ssh,git,linux,emacs,python,opencv,windows,pycharm+all,jupyternotebooks,visualstudiocode
 
 config.py
+camera/
 
 ### Emacs ###
 # -*- mode: gitignore; -*-
